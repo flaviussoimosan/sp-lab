@@ -6,33 +6,39 @@ namespace SP_Lab.Classes
 {
     public class Book
     {
-        public List<string> BookContent { get; set; }
-        public Book()
+        public string Title { get; set; }
+
+        public Author Author { get; set; }
+
+        public List<Chapter> Chapters { get; set; }
+
+        public Book(string bookTitle)
         {
-            BookContent = new List<string>();
+            Title = bookTitle;
+            Chapters = new List<Chapter>();
         }
 
-        public void CreateNewParagraph (string paragraph)
+        public void AddBookAuthor(Author author)
         {
-            this.BookContent.Add(paragraph);
+            Author = author;
         }
 
-        public void CreateNewImage(string image)
+        public int CreateNewChapter(string chapterName)
         {
-            this.BookContent.Add(image);
+            var chapter = new Chapter(chapterName);
+            Chapters.Add(chapter);
+            var chapterIndex = Chapters.FindIndex(obj => obj.Name == chapter.Name);
+            return chapterIndex;
         }
 
-        public void CreateNewTable(string table)
+        public Chapter GetChapter(int chapterIndex)
         {
-            this.BookContent.Add(table);
+            return Chapters[chapterIndex];
         }
 
         public void Print()
         {
-            foreach (string row in BookContent)
-            {
-                Console.WriteLine(row);
-            }
+
         }
     }
 }

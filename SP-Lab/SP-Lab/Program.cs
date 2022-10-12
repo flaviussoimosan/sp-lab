@@ -7,17 +7,25 @@ namespace SP_Lab
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Book book = new Book();
-            book.CreateNewParagraph("paragraph 1");
-            book.CreateNewParagraph("paragraph 2");
-            book.CreateNewParagraph("paragraph 3");
-            book.CreateNewImage("image");
-            book.CreateNewParagraph("paragraph 4");
-            book.CreateNewTable("table");
-            book.CreateNewParagraph("paragraph 5");
+            Book discoTitanic = new Book("Disco Titanic");
+            Author rpGheo = new Author("Radu Pavel");
 
-            book.Print();
+            discoTitanic.AddBookAuthor(rpGheo);
+            int indexChapterOne = discoTitanic.CreateNewChapter("Capitolul 1");
+            Chapter cph1 = discoTitanic.GetChapter(indexChapterOne);
+            var indexSubChapter = cph1.CreateNewSubchapter("Subcapitolul 1.1");
+            SubChapter sc1 = cph1.GetSubChapter(indexSubChapter);
+
+            sc1.CreateNewParagraph("Paragraph 1");
+            sc1.CreateNewParagraph("Paragraph 2");
+            sc1.CreateNewParagraph("Paragraph 3");
+            sc1.CreateNewImage("Image 1");
+            sc1.CreateNewParagraph("Paragraph 4");
+            sc1.CreateNewTable("Table 1");
+            sc1.CreateNewParagraph("Paragraph 5");
+
+            sc1.Print();
+
         }
     }
 }
