@@ -31,7 +31,7 @@ namespace TestApp.Classes
 
         public void Print()
         {
-            Console.WriteLine(Nume);
+            Console.WriteLine("\t"+Nume);
             foreach (var semigrupa in Semigrupe)
             {
                 semigrupa.Print();

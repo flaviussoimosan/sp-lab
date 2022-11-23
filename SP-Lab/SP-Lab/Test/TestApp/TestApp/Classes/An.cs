@@ -31,5 +31,11 @@ namespace TestApp.Classes
             }
 
         }
+
+        //public void Accept(IVisitor visitor)
+        //{
+        //    visitor.VisitConcreteComponentA(this);
+        //}
+
     }
 }

@@ -1,5 +1,4 @@
-﻿using System.Linq.Expressions;
-using TestApp.Classes;
+﻿using TestApp.Classes;
 
 class TestClass
 {
@@ -19,6 +18,9 @@ class TestClass
         Info3.Add(new Grupa("Grupa 2"));
 
         Info3.Print();
+
+        //Am schimbat structura clasei de main pentru ca nu imi aduc aminte cum se fac un visitor.
+        //Va rog sa ma scuzati pentru aceasta.
 
     }
 }

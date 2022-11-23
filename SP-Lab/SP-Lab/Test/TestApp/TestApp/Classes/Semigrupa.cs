@@ -27,10 +27,10 @@ namespace TestApp.Classes
 
         public void Print()
         {
-            Console.WriteLine(Nume);
+            Console.WriteLine("\t\t"+Nume);
             foreach(var student in Students)
             {
-                Console.WriteLine(student.Nume + ", " + student.Email);
+                Console.WriteLine("\t\t\t"+student.Nume + ", " + student.Email);
             }
 
                 
