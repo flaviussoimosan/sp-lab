@@ -25,4 +25,10 @@ public class Paragraph implements Element {
     public int GetElement(Element getElement) {
         return 0;
     }
+
+    public void SetParagraphAlignementStrategy(AlignStrategy alignStrategy)
+    {
+        Context context = new Context(alignStrategy);
+        this.ParagraphText = this.ParagraphText + context.ExecuteStrategy(this, context);
+    }
 }
