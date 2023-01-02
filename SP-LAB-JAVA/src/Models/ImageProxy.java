@@ -53,4 +53,9 @@ public class ImageProxy implements Element, Picture {
     public Dimension ImageDimension() {
         return null;
     }
+
+    @Override
+    public void AcceptVisitor(IVisitor visitor) {
+        visitor.VisitImageProxyClass(this);
+    }
 }

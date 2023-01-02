@@ -5,4 +5,6 @@ public interface Element {
     public void AddElement(Element elementToBeAdded);
     public void RemoveElement(Element elementToBeRemoved);
     public int GetElement(Element getElement);
+
+    public void AcceptVisitor(IVisitor visitor);
 }

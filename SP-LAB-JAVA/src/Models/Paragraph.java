@@ -1,8 +1,6 @@
 package Models;
 
-import Models.AlignStrategy;
-import Models.Context;
-import Models.Element;
+import Services.AlignStrategy;
 
 public class Paragraph implements Element {
 
@@ -36,5 +34,10 @@ public class Paragraph implements Element {
     {
         Context context = new Context(alignStrategy);
         this.ParagraphText = this.ParagraphText + context.ExecuteStrategy(this, context);
+    }
+
+    @Override
+    public void AcceptVisitor(IVisitor visitor) {
+        visitor.VisitParagraphClass(this);
     }
 }

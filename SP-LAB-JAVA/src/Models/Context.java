@@ -1,7 +1,9 @@
 package Models;
 
+import Services.AlignStrategy;
+
 public class Context {
-    private AlignStrategy AlignStrategy;
+    private Services.AlignStrategy AlignStrategy;
 
     public Context(AlignStrategy alignStrategy) {
         this.AlignStrategy = alignStrategy;

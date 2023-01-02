@@ -1,4 +1,7 @@
-package Models;
+package Services;
+
+import Models.Context;
+import Models.Paragraph;
 
 public class AlignCenterStrategy implements AlignStrategy{
     @Override

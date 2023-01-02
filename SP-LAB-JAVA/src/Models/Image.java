@@ -36,6 +36,11 @@ public class Image implements Element, Picture {
     }
 
     @Override
+    public void AcceptVisitor(IVisitor visitor) {
+        visitor.VisitImageClass(this);
+    }
+
+    @Override
     public String ImageUrl() {
         return null;
     }

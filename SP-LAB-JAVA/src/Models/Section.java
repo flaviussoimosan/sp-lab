@@ -40,4 +40,13 @@ public class Section implements Element{
         return 0;
     }
 
+    @Override
+    public void AcceptVisitor(IVisitor visitor) {
+        visitor.VisitSectionClass(this);
+
+        for(Element element: ElementList){
+            element.AcceptVisitor(visitor);
+        }
+    }
+
 }
