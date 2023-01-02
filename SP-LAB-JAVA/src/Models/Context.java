@@ -1,3 +1,5 @@
+package Models;
+
 public class Context {
     private AlignStrategy AlignStrategy;
 

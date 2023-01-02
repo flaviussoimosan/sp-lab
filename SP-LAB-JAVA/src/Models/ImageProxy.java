@@ -1,8 +1,10 @@
+package Models;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImageProxy implements Element, Picture{
+public class ImageProxy implements Element, Picture {
 
     private String ImageUrl;
     private List<Image> ImagesList = new ArrayList<Image>();
@@ -24,7 +26,7 @@ public class ImageProxy implements Element, Picture{
     @Override
     public void PrintElement() {
         RealImage = InitializeImage();
-        System.out.println("ImageProxy url: " + this.ImageUrl);
+        System.out.println("Models.ImageProxy url: " + this.ImageUrl);
     }
 
     @Override

@@ -1,3 +1,5 @@
+package Models;
+
 public interface Element {
     public void PrintElement();
     public void AddElement(Element elementToBeAdded);

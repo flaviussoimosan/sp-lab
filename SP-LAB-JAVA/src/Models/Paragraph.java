@@ -1,3 +1,9 @@
+package Models;
+
+import Models.AlignStrategy;
+import Models.Context;
+import Models.Element;
+
 public class Paragraph implements Element {
 
     private String ParagraphText;
@@ -8,7 +14,7 @@ public class Paragraph implements Element {
 
     @Override
     public void PrintElement() {
-        System.out.println("Paragraph: " + this.ParagraphText);
+        System.out.println("Models.Paragraph: " + this.ParagraphText);
     }
 
     @Override

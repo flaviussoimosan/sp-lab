@@ -1,7 +1,9 @@
+package Models;
+
 import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
-public class Image implements Element, Picture{
+public class Image implements Element, Picture {
     private String ImageName;
     private String IUrl;
 
@@ -15,7 +17,7 @@ public class Image implements Element, Picture{
     }
     @Override
     public void PrintElement() {
-        System.out.println("Image: " + this.ImageName);
+        System.out.println("Models.Image: " + this.ImageName);
     }
 
     @Override

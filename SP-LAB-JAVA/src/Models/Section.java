@@ -1,3 +1,7 @@
+package Models;
+
+import Models.Element;
+
 import java.util.ArrayList;
 import java.util.List;
 

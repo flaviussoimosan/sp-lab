@@ -1,7 +1,9 @@
+package Models;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book extends Section{
+public class Book extends Section {
     private String Title;
     private List<Author> AuthorsList = new ArrayList<Author>();
 
@@ -20,7 +22,7 @@ public class Book extends Section{
     }
 
     public void PrintBook(){
-        System.out.println("Book:" + Title);
+        System.out.println("Models.Book:" + Title);
         System.out.println();
         System.out.println("Authors are:");
         for(int i = 0; i < AuthorsList.size(); i++)

@@ -1,3 +1,5 @@
+package Models;
+
 public class AlignCenterStrategy implements AlignStrategy{
     @Override
     public String RenderStrategy(Paragraph paragraph, Context context) {
