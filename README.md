@@ -1,4 +1,3 @@
-# sp-lab
-Laboratorul SP
-
-This will be a project made in SP labs
+# Nota finala: 5
+Nota test: 5
+Nota proiect: 5
